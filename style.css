@@ -1,6 +1,10 @@
 html {
         scroll-behavior: smooth;
       }
+      html,
+      body {
+        overflow-x: clip;
+      }
       body {
         margin: 0;
         background: #131317;
@@ -101,11 +105,6 @@ html {
       }
 
       @media (max-width: 639px) {
-        html,
-        body {
-          overflow-x: clip;
-        }
-
         .site-header-inner {
           height: auto;
           min-height: 3.5rem;

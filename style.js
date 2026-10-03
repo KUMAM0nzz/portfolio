@@ -101,6 +101,7 @@ const skills = [
         image: "photo/Screenshot%202026-10-03%20102148.png",
         imageAlt: "SE Internship Tracking System student profile and internship readiness status",
         gh: "https://github.com/IntaninK/SE_Internship_tracking_system",
+        web: "https://se-internship-tracking-system.vercel.app/pages/dashboard.html",
         pts: [
           "Designed test cases for student, advisor, course instructor, and admin workflows.",
           "Performed functional and regression testing; documented and tracked issues to resolution.",
@@ -127,7 +128,7 @@ const skills = [
    <div class="lbl text-dim mb-3">${p.when} · My role</div>
    <ul class="space-y-2 text-[14px] text-ink">${p.pts.map((t) => `<li class="flex gap-2"><span class="text-lime">▸</span><span>${t}</span></li>`).join("")}</ul>
    <div class="flex flex-wrap gap-2 pt-4">${p.tech.map((t) => `<span class="px-2 py-1 bg-hi border border-line/60 font-m text-xs rounded">${t}</span>`).join("")}</div></div>
-   ${p.gh ? `<div class="pt-4 border-t border-line/30"><a href="${p.gh}" target="_blank" rel="noopener" class="inline-flex px-4 py-2 bg-lime hover:bg-white text-[#171e00] font-m text-sm font-bold rounded">Source &lt;/&gt; ↗</a></div>` : ""}
+   ${p.gh || p.web ? `<div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-line/30">${p.gh ? `<a href="${p.gh}" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 bg-lime hover:bg-white text-[#171e00] font-m text-sm font-bold rounded">Source &lt;/&gt; ↗</a>` : ""}${p.web ? `<a href="${p.web}" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 bg-lime hover:bg-white text-[#171e00] font-m text-sm font-bold rounded">WEB ↗</a>` : ""}</div>` : ""}
   </div></div></div></div>`,
         )
         .join("");
