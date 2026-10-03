@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aekkaphat Ainsawat — Software Tester Intern</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="style.js"></script>
+  </head>
+  <body>
+    <!-- NAV (replaces old sidebar) -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-bg/80 border-b border-line/50"
+    >
+      <div
+        class="site-header-inner max-w-6xl mx-auto px-5 h-14 flex items-center justify-between"
+      >
+        <a href="#top" class="font-d font-bold text-lime text-xl"
+          >&lt;AA/&gt;</a
+        >
+        <button
+          class="mobile-menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-navigation" class="site-nav flex gap-6 font-m text-sm text-mute">
+          <a class="hover:text-lime" href="#profile">profile</a
+          ><a class="hover:text-lime" href="#projects">projects</a
+          ><a class="hover:text-lime" href="#contact">contact</a>
+        </nav>
+        <span class="chip" style="--c: #c8f232"
+          ><span class="text-lime">Open for internships</span></span
+        >
+      </div>
+    </header>
+
+    <main id="top" class="max-w-6xl mx-auto px-5">
+      <!-- HERO -->
+      <section class="hero-section min-h-[88vh] flex flex-col justify-between py-10">
+        <div
+          class="inline-flex w-fit items-center gap-2 font-m text-sm text-lime bg-lo px-3 py-1.5 rounded border border-line/40"
+        >
+          &gt; hello, world <span class="w-2 h-4 bg-lime animate-pulse"></span>
+        </div>
+        <div class="relative my-8">
+          <div
+            class="hero-title font-d font-bold leading-[.85] tracking-tighter select-none text-[22vw] sm:text-[15vw] lg:text-[170px]"
+          >
+            <div>SOFTWARE</div>
+            <div>TESTER</div>
+            <div class="out">INTERN</div>
+          </div>
+          <div
+            class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[360px] bg-lo border border-line/60 rounded shadow-2xl p-4"
+          >
+            <div
+              class="flex items-center justify-between pb-2 mb-2 border-b border-line/30"
+            >
+              <div class="flex gap-1.5">
+                <i class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></i
+                ><i class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></i
+                ><i class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></i>
+              </div>
+              <span class="font-m text-xs text-dim">qa.config.ts</span
+              ><span class="font-m text-xs text-lime">SYS:OK</span>
+            </div>
+            <pre
+              class="font-m text-xs leading-relaxed overflow-x-auto"
+            ><span class="text-vio">const</span> qa = {
+  <span class="text-dim">name</span>: <span class="text-lime">"Aekkaphat"</span>,
+  <span class="text-dim">focus</span>: [<span class="text-lime">"Test Cases"</span>, <span class="text-lime">"Bug Reports"</span>],
+  <span class="text-dim">process</span>: <span class="text-lime">"SDLC / Agile"</span>,
+  <span class="text-dim">status</span>: <span class="text-lime">"available"</span>
+};</pre>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-6"
+          >
+            <p class="text-lg text-mute max-w-xl">
+              IT student focused on software testing, quality improvement and
+              reliable system performance — learning manual and automated
+              testing in a professional team.
+            </p>
+            <div class="flex gap-3 shrink-0 font-m text-sm">
+              <a
+                href="#projects"
+                class="px-5 py-2.5 bg-lime hover:bg-white text-[#171e00] font-bold rounded"
+                >View Work ↓</a
+              >
+              <a
+                href="https://github.com/KUMAM0nzz"
+                target="_blank"
+                rel="noopener"
+                class="px-5 py-2.5 bg-low hover:bg-hi border border-line/60 rounded"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+          <div class="overflow-hidden border-y border-line/30 py-3 bg-lo/60">
+            <div
+              class="flex whitespace-nowrap font-m text-xs tracking-wider uppercase text-mute"
+            >
+              <div class="flex gap-6 pr-6 shrink-0 mq" id="tick1"></div>
+              <div
+                class="flex gap-6 pr-6 shrink-0 mq"
+                id="tick2"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE OVERVIEW (bento) -->
+      <section id="profile" class="py-16 border-t border-line/30">
+        <div class="flex items-end justify-between mb-8 flex-wrap gap-4">
+          <div>
+            <div class="lbl text-lime mb-2">// 01 Profile Overview</div>
+            <h2 class="font-d font-bold text-4xl sm:text-5xl tracking-tight">
+              QUALITY MATTERS
+            </h2>
+          </div>
+          <span class="chip" style="--c: #d0bcff">QA / Software Testing</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+          <!-- photo / identity card -->
+          <div
+            class="card md:col-span-4 md:row-span-3 relative overflow-hidden min-h-[360px] flex flex-col justify-between p-5"
+            style="
+              background: radial-gradient(
+                120% 80% at 30% 20%,
+                #571bc133,
+                #0e0e12 70%
+              );
+            "
+          >
+            <div class="flex gap-2">
+              <span class="lbl relative z-10 px-2.5 py-1 rounded bg-hi border border-line/50"
+                >IT Student</span
+              ><span class="lbl relative z-10 px-2.5 py-1 rounded bg-vio2 text-vio"
+                >QA Intern</span
+              >
+            </div>
+            <img
+              src="photo/avatar.jpg"
+              alt="Aekkaphat Ainsawat"
+              class="profile-photo absolute inset-0 h-full w-full object-cover object-center"
+            />
+            <div class="profile-photo-overlay absolute inset-0"></div>
+            <div class="relative z-10">
+              <div class="lbl text-lime mb-1">Candidate 2026</div>
+              <div class="font-d font-bold text-3xl">Aekkaphat Ainsawat</div>
+              <div class="text-sm text-mute">Software Tester (Intern)</div>
+            </div>
+          </div>
+          <!-- intro -->
+          <div class="card md:col-span-8 p-6">
+            <div class="lbl text-vio mb-3">// Introduction</div>
+            <h3 class="font-d font-bold text-2xl mb-3">
+              Hi! I'm Aekkaphat Ainsawat
+            </h3>
+            <p class="text-mute text-[15px] leading-relaxed max-w-2xl">
+              An IT student eager to gain practical experience as a Quality
+              Assurance (QA) Intern. I'm passionate about software testing,
+              quality improvement and ensuring reliable system performance, and
+              I keep developing my analytical and problem-solving skills.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-5 font-m text-sm">
+              <a
+                href="CV%20(1).pdf"
+                download="CV-Aekkaphat-Ainsawat.pdf"
+                class="px-5 py-2.5 bg-lime hover:bg-white text-[#171e00] font-bold rounded-full"
+                >↓ Download CV.pdf</a
+              >
+              <a
+                href="#contact"
+                class="px-5 py-2.5 bg-lo border border-line/60 rounded-full hover:border-lime"
+                >Get in touch</a
+              >
+            </div>
+          </div>
+          <!-- stats -->
+          <div class="card md:col-span-4 p-5">
+            <span class="material-symbols-outlined text-lime">school</span>
+            <div class="font-d font-bold mt-4">IT Student</div>
+            <div class="font-m text-xs text-dim mt-1">
+              Aiming for a QA internship
+            </div>
+          </div>
+          <div class="card md:col-span-4 p-5">
+            <span class="material-symbols-outlined text-vio">bug_report</span>
+            <div class="font-d font-bold mt-4">QA &amp; Tester</div>
+            <div class="font-m text-xs text-dim mt-1">Manual → Automated</div>
+          </div>
+          <!-- skills -->
+          <div class="card md:col-span-8 p-5">
+            <div class="flex justify-between lbl mb-4">
+              <span class="text-dim">Core Skills</span
+              ><span class="text-lime">// from CV</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Test Case Writing</span
+              ><span class="chip">Bug Reporting</span
+              ><span class="chip" style="--c: #d0bcff"
+                >Requirement Analysis</span
+              ><span class="chip" style="--c: #d0bcff">System Analysis</span>
+              <span class="chip" style="--c: #ffbd2e">ER Diagram</span
+              ><span class="chip" style="--c: #ffbd2e">SDLC / Agile</span
+              ><span class="chip" style="--c: #27c93f">GitHub</span
+              ><span class="chip" style="--c: #27c93f">Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="py-16 border-t border-line/30">
+        <div class="pb-6 border-b border-line/30">
+          <div class="lbl text-dim mb-1">02 / project experience</div>
+          <div class="flex items-baseline gap-3">
+            <h2 class="font-d font-bold text-4xl tracking-tight">
+              SELECTED WORK
+            </h2>
+            <span class="font-m font-bold text-lime">(03)</span>
+          </div>
+        </div>
+        <div class="divide-y divide-line/40" id="acc"></div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="tech-stack" class="py-16 border-t border-line/30">
+        <div class="pb-6 mb-6 border-b border-line/30">
+          <div class="lbl text-dim mb-1">03 / tools &amp; technologies</div>
+          <h2 class="font-d font-bold text-4xl tracking-tight">TECH STACK</h2>
+        </div>
+        <div>
+          <div class="tech-stack-grid">
+            <div class="tech-card">
+              <img src="https://cdn.simpleicons.org/k6" alt="" loading="lazy" />
+              <span>k6</span>
+            </div>
+            <div class="tech-card">
+              <svg class="tech-logo-maestro" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="2" y="2" width="28" height="28" rx="8" fill="#7c3aed" />
+                <path d="M8 22V10h3l5 6 5-6h3v12h-3v-7l-5 6-5-6v7z" fill="#fff" />
+              </svg>
+              <span>Maestro Studio</span>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.simpleicons.org/postman" alt="" loading="lazy" />
+              <span>Postman</span>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.simpleicons.org/github" alt="" loading="lazy" />
+              <span>GitHub</span>
+            </div>
+            <div class="tech-card">
+              <svg class="tech-logo-playwright" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16 2 29 9v14l-13 7L3 23V9z" fill="#2ead33" />
+                <path d="M13 9v14l11-7z" fill="#fff" />
+              </svg>
+              <span>Playwright</span>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.simpleicons.org/html5" alt="" loading="lazy" />
+              <span>HTML</span>
+            </div>
+            <div class="tech-card">
+              <svg class="tech-logo-css" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="m5 3 2 23 9 3 9-3 2-23z" fill="#1572b6" />
+                <path d="M16 7h7l-1 4h-6v3h5l-1 8-4 1z" fill="#fff" />
+                <path d="M16 7v4h-6l.3 3H16v4h-5l.3 3 4.7 1z" fill="#d8efff" />
+              </svg>
+              <span>CSS</span>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.simpleicons.org/figma" alt="" loading="lazy" />
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="my-16 bg-lime text-lo p-8 md:p-14 rounded relative"
+      >
+        <div
+          class="flex justify-between lbl font-bold pb-5 border-b border-lo/30"
+        >
+          <span>04 / contact.sh</span><span>Status: open for internships</span>
+        </div>
+        <h2
+          class="font-d font-bold leading-[.85] tracking-tight py-8 text-[22vw] md:text-[150px]"
+        >
+          LET'S TALK.
+        </h2>
+        <div
+          class="flex flex-wrap items-center gap-4 pb-8 border-b border-lo/30"
+        >
+          <a
+            href="mailto:aekkaphat.pai@gmail.com"
+            class="font-d font-bold text-2xl md:text-4xl underline underline-offset-8 decoration-4 break-all"
+            >aekkaphat.pai@gmail.com</a
+          >
+          <button
+            class="px-4 py-2 bg-lo text-lime font-m text-xs font-bold rounded"
+            onclick="
+              navigator.clipboard.writeText('aekkaphat.pai@gmail.com');
+              this.innerText = 'COPIED!';
+            "
+          >
+            COPY
+          </button>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 pt-8 font-m">
+          <div>
+            <div class="lbl font-bold opacity-70 mb-1">Phone</div>
+            <a class="font-d font-bold text-2xl" href="tel:063465427"
+              >063-465-427</a
+            >
+          </div>
+          <div>
+            <div class="lbl font-bold opacity-70 mb-1">Role</div>
+            <div class="font-d font-bold text-2xl">
+              Software Tester (QA)
+            </div>
+          </div>
+          <div>
+            <div class="lbl font-bold opacity-70 mb-1">Facebook</div>
+            <a
+              class="font-d font-bold text-2xl hover:underline"
+              href="https://www.facebook.com/aekkaphat.ainsawat"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aekkaphat Ainsawat ↗</a
+            >
+          </div>
+          <div>
+            <div class="lbl font-bold opacity-70 mb-1">Links</div>
+            <a
+              class="font-bold hover:underline"
+              href="https://github.com/KUMAM0nzz"
+              target="_blank"
+              rel="noopener"
+              >GitHub ↗</a
+            ><br /><a
+              class="font-bold hover:underline"
+              href="CV%20(1).pdf"
+              download="CV-Aekkaphat-Ainsawat.pdf"
+              >CV.pdf ↓</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="max-w-6xl mx-auto px-5 py-5 border-t border-line/30 flex justify-between font-m text-xs text-mute"
+    >
+      <span>© 2026 Aekkaphat Ainsawat</span
+      ><a class="hover:text-lime" href="#top">Back to top ↑</a>
+    </footer>
+
+    
+    
+  </body>
+</html>
